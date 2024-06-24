@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:shiprocket/cart_page/cart_screen.dart';
+import 'package:shiprocket/favorite_page/favorite_screen.dart';
+import 'package:shiprocket/home_page/home_screen.dart';
+import 'package:shiprocket/profile_page/profile_screen.dart';
 import 'package:shiprocket/utills/color.dart';
 
 class BottonBar extends StatefulWidget {
@@ -10,12 +14,30 @@ class BottonBar extends StatefulWidget {
 
 class _BottonBarState extends State<BottonBar> {
   int cuttenIndex = 2;
+  List screens = const [
+    Scaffold(),
+    FavoriteScreen(),
+    HomeScreen(),
+    CartScreen(),
+    ProfileScreen(),
+    Scaffold(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.deepPurple.shade200,
+        onPressed: () {
+          setState(() {
+            cuttenIndex = 2;
+          });
+        },
+        shape: const CircleBorder(),
+        backgroundColor: primaryColor,
+        child: const Icon(
+          Icons.home,
+          color: Colors.white,
+          size: 35,
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
@@ -30,7 +52,11 @@ class _BottonBarState extends State<BottonBar> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  cuttenIndex = 0;
+                });
+              },
               icon: Icon(
                 Icons.grid_view_outlined,
                 size: 30,
@@ -38,7 +64,11 @@ class _BottonBarState extends State<BottonBar> {
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  cuttenIndex = 1;
+                });
+              },
               icon: Icon(
                 Icons.favorite_border,
                 size: 30,
@@ -49,7 +79,11 @@ class _BottonBarState extends State<BottonBar> {
               width: 15,
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  cuttenIndex = 3;
+                });
+              },
               icon: Icon(
                 Icons.shopping_cart_outlined,
                 size: 30,
@@ -57,7 +91,11 @@ class _BottonBarState extends State<BottonBar> {
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  cuttenIndex = 4;
+                });
+              },
               icon: Icon(
                 Icons.person,
                 size: 30,
@@ -67,6 +105,7 @@ class _BottonBarState extends State<BottonBar> {
           ],
         ),
       ),
+      body: screens[cuttenIndex],
     );
   }
 }
