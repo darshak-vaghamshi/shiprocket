@@ -25,9 +25,7 @@ class Categories extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 5,
-              ),
+              const SizedBox(height: 5),
               Text(
                 categories[index].title,
                 style: const TextStyle(

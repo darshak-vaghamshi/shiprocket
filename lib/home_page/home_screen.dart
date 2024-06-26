@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:shiprocket/widgets/categories.dart';
-import 'package:shiprocket/widgets/home_app_bar.dart';
-import 'package:shiprocket/widgets/image_slider.dart';
-import 'package:shiprocket/widgets/product_card.dart';
+import 'package:shiprocket/home_page/widgets/home_app_bar.dart';
+import 'package:shiprocket/home_page/widgets/image_slider.dart';
+import 'package:shiprocket/home_page/widgets/product_card.dart';
 import 'package:shiprocket/widgets/products_model.dart';
-import 'package:shiprocket/widgets/search_bar.dart';
+import 'package:shiprocket/home_page/widgets/search_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

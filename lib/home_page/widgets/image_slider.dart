@@ -54,7 +54,7 @@ class ImageSlider extends StatelessWidget {
                 5,
                 (index) => AnimatedContainer(
                   duration: const Duration(microseconds: 300),
-                  width: currentSlide == index ? 15 : 0,
+                  width: currentSlide == index ? 15 : 9,
                   height: 8,
                   margin: const EdgeInsets.only(right: 3),
                   decoration: BoxDecoration(
