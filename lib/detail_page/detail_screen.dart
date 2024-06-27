@@ -28,7 +28,9 @@ class _DetailScreenState extends State<DetailScreen> {
         child: SafeArea(
           child: Column(
             children: [
-              const DetailAppBar(),
+              DetailAppBar(
+                product: widget.product,
+              ),
               MyImageSlider(
                 onChange: (index) {
                   setState(() {

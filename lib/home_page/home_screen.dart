@@ -6,9 +6,14 @@ import 'package:shiprocket/home_page/widgets/product_card.dart';
 import 'package:shiprocket/widgets/products_model.dart';
 import 'package:shiprocket/home_page/widgets/search_bar.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     int currentSlide = 0;
@@ -27,9 +32,9 @@ class HomeScreen extends StatelessWidget {
             ImageSlider(
               currentSlide: currentSlide,
               onChange: (value) {
-                // setState(() {
-                //   currentSlide = value;
-                // });
+                setState(() {
+                  currentSlide = value;
+                });
               },
             ),
             const SizedBox(height: 20),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:shiprocket/provider/card_provider.dart';
 import 'package:shiprocket/utills/color.dart';
 import 'package:shiprocket/widgets/products_model.dart';
