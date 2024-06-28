@@ -26,7 +26,7 @@ class _AddToCardState extends State<AddToCard> {
           borderRadius: BorderRadius.circular(50),
           color: Colors.black,
         ),
-        padding: const EdgeInsets.symmetric(horizontal: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 12),
         alignment: Alignment.center,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
