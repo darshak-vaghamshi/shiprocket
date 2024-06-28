@@ -33,7 +33,7 @@ class _CartScreenState extends State<CartScreen> {
     }
 
     return Scaffold(
-      bottomSheet: const CheckDutBox(),
+      bottomSheet: CheckDutBox(),
       backgroundColor: contentColor,
       body: SafeArea(
         child: Column(
@@ -103,20 +103,20 @@ class _CartScreenState extends State<CartScreen> {
                                   Text(
                                     cartItems.title,
                                     style: const TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16,
-                                    ),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16,
+                                        color: Colors.black),
                                   ),
                                   const SizedBox(width: 10),
                                   Text(
                                     cartItems.category,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 14,
-                                      color: Colors.grey.shade400,
+                                      color: Colors.grey,
                                     ),
                                   ),
-                                  const SizedBox(width: 10),
+                                  const SizedBox(width: 9),
                                   Text(
                                     "\$${cartItems.price}",
                                     style: const TextStyle(

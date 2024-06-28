@@ -10,7 +10,11 @@ class Category {
 
 final List<Category> categories = [
   Category(
-    title: "Man's\nShoes",
+    title: "All",
+    image: "assets/images/all.jpg",
+  ),
+  Category(
+    title: "Men's\nShoes",
     image: "assets/images/shoes.jpg",
   ),
   Category(
@@ -18,7 +22,7 @@ final List<Category> categories = [
     image: "assets/images/laptop.jpg",
   ),
   Category(
-    title: "Man's\nWatch",
+    title: "Watch",
     image: "assets/images/watch.jpg",
   ),
   Category(
@@ -26,11 +30,11 @@ final List<Category> categories = [
     image: "assets/images/mobile.jpg",
   ),
   Category(
-    title: "man's\nFashion",
+    title: "men's\nFashion",
     image: "assets/images/shirt.jpg",
   ),
   Category(
-    title: "Woman's\nFashion",
+    title: "Women's\nFashion",
     image: "assets/images/fashion.jpg",
   ),
   Category(
@@ -38,7 +42,7 @@ final List<Category> categories = [
     image: "assets/images/sunglasses.jpg",
   ),
   Category(
-    title: "Woman's\nShoes",
+    title: "Women's\nShoes",
     image: "assets/images/shoes4.jpg",
   ),
 ];
